@@ -1,0 +1,66 @@
+{
+	"info": {
+		"name": "Transactions API",
+		"_postman_id": "568b974f-d7a4-c7ba-ccae-3371afa4f6c5",
+		"description": "The primary input end-point of this API is in charge of loading data into the system in the form of events. Is called every time a transaction is made. The other one returns the statistic of the events collected during the pre-defined window of time.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "transactions",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n      \"amount\": \"{{$randomInt}}.{{$randomInt}}\",\n  \"timestamp\":  {{$timestamp}}\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/transactions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "statistics",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n      \"count\": 3,\n  \"timestamp\": 12890212\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/statistics",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"statistics"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

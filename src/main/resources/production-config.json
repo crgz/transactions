@@ -1,0 +1,4 @@
+{
+	"http.port": 8080,
+	"time.window.seconds": 60
+}
