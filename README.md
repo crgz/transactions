@@ -37,8 +37,7 @@ Or...
 java -jar target/transactions-1.0-fat.jar -conf target/classes/production-config.json
 ```
 ## ▶️ Usage
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/73a0c326f4f0d15061d1)
-[![Download Collection](doc/icons/download1.svg)](doc/Transactions API.postman_collection.json)
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/73a0c326f4f0d15061d1) [![Download Collection](doc/icons/download1.svg)](doc/Transactions API.postman_collection.json)
 
 ### POST /transactions
 This end-point updates the current stock of a particular product. 
