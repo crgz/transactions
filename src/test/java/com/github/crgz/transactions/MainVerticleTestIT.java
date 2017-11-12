@@ -87,7 +87,7 @@ public class MainVerticleTestIT
 				.assertThat().statusCode(201);
 		}
 
-		TimeUnit.MILLISECONDS.sleep(5000);
+		TimeUnit.MILLISECONDS.sleep(6000);
 
 		// Now get the transactions and check the content
 		get("/statistics").then()
