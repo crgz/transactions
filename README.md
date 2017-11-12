@@ -7,6 +7,7 @@
 
 # Handling stocks for availability
 <img src="./doc/icons/streaming-icon.jpg?raw=true" width="20%" align="right" style="border:20px solid white">
+
 ## 💡 Synopsis
 
 This repository contains the preliminary implementation of a simple [end to end](https://en.wikipedia.org/wiki/End-to-end_principle) event-driven reactive JSON REST APIs for reporting [streamed](https://en.wikipedia.org/wiki/Event_stream_processing) statistics over a sliding window of pre-established time. The current default time of operation is 60 seconds. The API minimize processing time using [non-blocking asynchronous I/O](https://en.wikipedia.org/wiki/Asynchronous_I/O).
