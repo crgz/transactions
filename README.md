@@ -10,7 +10,7 @@
 
 ## 💡 Synopsis
 
-This repository contains the preliminary implementation of a simple [end to end](https://en.wikipedia.org/wiki/End-to-end_principle) event-driven reactive JSON REST APIs for reporting [streamed](https://en.wikipedia.org/wiki/Event_stream_processing) statistics over a sliding window of pre-established time. The current default time of operation is 60 seconds. The API minimize processing time using [non-blocking asynchronous I/O](https://en.wikipedia.org/wiki/Asynchronous_I/O).
+This repository contains the preliminary implementation of a simple [end to end](https://en.wikipedia.org/wiki/End-to-end_principle) [event-driven](https://en.wikipedia.org/wiki/Event-driven_programming) [reactive](https://en.wikipedia.org/wiki/Reactive_programming) JSON [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) APIs for reporting [streamed](https://en.wikipedia.org/wiki/Event_stream_processing) statistics over a sliding window of pre-established time. The current default time of operation is 60 seconds. The API minimize processing time using [non-blocking asynchronous I/O](https://en.wikipedia.org/wiki/Asynchronous_I/O).
 
 The primary input end-point of this API is in charge of loading data into the system in the form of events. Is called every time a transaction is made. The other one returns the statistic of the events collected during the pre-defined window of time. 
 
