@@ -5,7 +5,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 
-# Handling stocks for availability
+# Transactions Statistics
 <img src="./doc/icons/streaming-icon.jpg?raw=true" width="20%" align="right" style="border:20px solid white">
 
 ## 💡 Synopsis
