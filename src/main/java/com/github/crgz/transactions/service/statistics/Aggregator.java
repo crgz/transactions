@@ -48,6 +48,8 @@ import com.github.crgz.transactions.service.statistics.tendency.Accumulator;
  */
 public class Aggregator
 {
+	private static final Logger logger = LogManager.getLogger(Aggregator.class.getName());
+
 	private final DoubleAdder sum = new DoubleAdder();
 	private final LongAdder count = new LongAdder();
 	private final DoubleAdder max = new DoubleAdder();
@@ -57,8 +59,6 @@ public class Aggregator
 	private final ExecutorService executor;
 	private final LongAdder counter;
 	private final Statistics[] cache;
-
-	static final Logger logger = LogManager.getLogger(Aggregator.class.getName());
 
 	public Aggregator(final Duration duration)
 	{

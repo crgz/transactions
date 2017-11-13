@@ -47,7 +47,7 @@ import com.jayway.restassured.RestAssured;
  */
 public class MainVerticleTestIT
 {
-	static final Logger logger = LogManager.getLogger(MainVerticleTestIT.class.getName());
+	private static final Logger logger = LogManager.getLogger(MainVerticleTestIT.class.getName());
 
 	@BeforeClass
 	public static void configureRestAssured()

@@ -51,7 +51,8 @@ import static org.awaitility.Awaitility.await;
  */
 public class SchedulerTest
 {
-	static final Logger logger = LogManager.getLogger(SchedulerTest.class.getName());
+	private static final Logger logger = LogManager.getLogger(SchedulerTest.class.getName());
+	
 	private final Set<Integer> result = new HashSet<Integer>();
 
 	@Test

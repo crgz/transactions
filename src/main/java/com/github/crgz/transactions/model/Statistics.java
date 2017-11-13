@@ -32,12 +32,31 @@ import io.vertx.core.json.Json;
  */
 public class Statistics
 {
+	/**
+	 * Total sum of transaction value
+	 */
 	private final double sum;
+
+	/**
+	 * Single highest transaction value
+	 */
 	private final double max;
+	/**
+	 * Single lowest transaction value
+	 */
 	private final double min;
+	/**
+	 * Total number of transactions happened
+	 */
 	private final long count;
+	/**
+	 * Average amount of transaction value
+	 */
 	private final double avg;
 
+	/**
+	 * This Data transfer object is used for JSON Marshaling 
+	 */
 	public Statistics(final double sum, final long count, final double max, final double min, final double avg)
 	{
 		this.sum = sum;
@@ -47,6 +66,9 @@ public class Statistics
 		this.count = count;
 	}
 
+	/**
+	 *  Required for JSON Marshaling
+	 */
 	public Statistics()
 	{
 		this.sum = 0;
@@ -102,7 +124,7 @@ public class Statistics
 	@Override
 	public int hashCode()
 	{
-		final int prime = 31;
+		int prime = 31;
 		int result = 1;
 		long temp;
 		temp = Double.doubleToLongBits(avg);
@@ -127,38 +149,17 @@ public class Statistics
 		{
 			return true;
 		}
-		if (obj == null)
+		if (obj == null || getClass() != obj.getClass())
 		{
 			return false;
 		}
-		if (getClass() != obj.getClass())
-		{
-			return false;
-		}
-		Statistics other = (Statistics) obj;
-		if (Double.doubleToLongBits(avg) != Double.doubleToLongBits(other.avg))
-		{
-			return false;
-		}
-		if (count != other.count)
-		{
-			return false;
-		}
-		if (Double.doubleToLongBits(max) != Double.doubleToLongBits(other.max))
-		{
-			return false;
-		}
-		if (Double.doubleToLongBits(min) != Double.doubleToLongBits(other.min))
-		{
-			return false;
-		}
-		if (Double.doubleToLongBits(sum) != Double.doubleToLongBits(other.sum))
-		{
-			return false;
-		}
-		return true;
+		final Statistics other = (Statistics) obj;
+		return !(Double.doubleToLongBits(avg) != Double.doubleToLongBits(other.avg) || count != other.count
+				|| Double.doubleToLongBits(max) != Double.doubleToLongBits(other.max)
+				|| Double.doubleToLongBits(min) != Double.doubleToLongBits(other.min)
+				|| Double.doubleToLongBits(sum) != Double.doubleToLongBits(other.sum));
 	}
-	
+
 	@Override
 	public String toString()
 	{

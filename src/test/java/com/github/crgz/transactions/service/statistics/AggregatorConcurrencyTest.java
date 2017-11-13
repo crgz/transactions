@@ -28,7 +28,7 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  ******************************************************************************/
-package com.github.crgz.transactions.service;
+package com.github.crgz.transactions.service.statistics;
 
 import static org.junit.Assert.assertEquals;
 
@@ -52,12 +52,11 @@ import com.github.crgz.transactions.service.statistics.Aggregator;
  */
 public class AggregatorConcurrencyTest
 {
-	private static final int LOAD = 1000;
+	private static final Logger logger = LogManager.getLogger(AggregatorConcurrencyTest.class);
 
+	private static final int LOAD = 1000;
 	private static final CyclicBarrier barrier = new CyclicBarrier(LOAD + 1);
 	private static final ExecutorService pool = Executors.newCachedThreadPool();
-
-	private static Logger logger = LogManager.getLogger(AggregatorConcurrencyTest.class);
 
 	@Test
 	public void test()

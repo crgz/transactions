@@ -36,11 +36,7 @@ import java.util.concurrent.atomic.DoubleAdder;
 import java.util.concurrent.atomic.LongAdder;
 import java.util.concurrent.locks.StampedLock;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import com.github.crgz.transactions.model.Event;
-import com.github.crgz.transactions.service.statistics.Aggregator;
 import com.github.crgz.transactions.service.statistics.Solver;
 
 /**
@@ -56,10 +52,7 @@ public final class Accumulator extends Solver
 {
 	private final DoubleAdder windowAdder;
 	private final LongAdder windowCounter;
-
 	private final StampedLock lock = new StampedLock();
-
-	static final Logger logger = LogManager.getLogger(Aggregator.class.getName());
 
 	public Accumulator(final Duration duration, DoubleAdder windowAdder, LongAdder windowCounter)
 	{

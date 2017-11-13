@@ -32,9 +32,6 @@ package com.github.crgz.transactions.service;
 
 import java.time.Duration;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import com.github.crgz.transactions.model.Event;
 import com.github.crgz.transactions.model.Statistics;
 import com.github.crgz.transactions.service.time.Scheduler;
@@ -45,8 +42,6 @@ import com.github.crgz.transactions.service.statistics.Aggregator;
  */
 public class Controller
 {
-	static final Logger logger = LogManager.getLogger(Controller.class.getName());
-
 	private final Aggregator aggregator;
 	private final Scheduler scheduler;
 

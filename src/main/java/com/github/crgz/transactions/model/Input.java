@@ -37,8 +37,8 @@ import io.vertx.core.json.Json;
  */
 public class Input
 {
-	private long timestamp;
-	private double amount;
+	private final long timestamp;
+	private final double amount;
 
 	public Input(long timestamp, int count)
 	{
@@ -46,9 +46,13 @@ public class Input
 		this.amount = count;
 	}
 
+	/**
+	 * Required for JSON Marshaling
+	 */
 	public Input()
 	{
-		// Required for JSON Marshaling
+		this.timestamp = 0;
+		this.amount = 0;
 	}
 
 	public long getTimestamp()
