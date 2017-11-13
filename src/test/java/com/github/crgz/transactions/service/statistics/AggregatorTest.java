@@ -55,11 +55,10 @@ import com.github.crgz.utils.WorkbookDataException;
  */
 public class AggregatorTest
 {
-	private Collection<Object[]> data;
-
-	static final Logger logger = LogManager.getLogger(AggregatorTest.class.getName());
+	private static final Logger logger = LogManager.getLogger(AggregatorTest.class.getName());
 
 	private Aggregator aggregator;
+	private Collection<Object[]> data;
 
 	@Before
 	public void setUp() throws IOException, WorkbookDataException
