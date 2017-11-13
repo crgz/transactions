@@ -1,4 +1,4 @@
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/bbd8890c66d249d8838b9e64e5ee2327)](https://www.codacy.com/app/conrado-m/stock?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=conrado-m/stock&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/7e7b4472a8d342e3839dd70cbc600838)](https://www.codacy.com/app/cmr/workbook?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=crgz/workbook&amp;utm_campaign=Badge_Grade)
 [![Build Status](https://travis-ci.org/crgz/transactions.svg?branch=master)](https://travis-ci.org/crgz/transactions)
 [![codecov](https://codecov.io/gh/crgz/transactions/branch/master/graph/badge.svg)](https://codecov.io/gh/crgz/transactions)
 [![Coverage Status](https://coveralls.io/repos/github/crgz/transactions/badge.svg?branch=master)](https://coveralls.io/github/crgz/transactions?branch=master)
