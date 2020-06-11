@@ -31,7 +31,7 @@ It generates a _fat-jar_ in the `target` directory.
 The command compiles the project and runs the tests, then  it launches the application, so you can check by yourself.
 
 ```bash
-mvn test exec:java
+mvn exec:java
 ```
 Or...
 ```bash
